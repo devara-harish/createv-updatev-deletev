@@ -1,0 +1,16 @@
+{% extends 'app1/dummy.html' %}
+
+{% block title %}
+    <title>Delete Page</title>
+{% endblock %}
+
+{% block body_block  %}
+<form method="POST">
+    {% csrf_token %}
+
+    <input type="submit" value="Yes_sure_ i_want_Delete" class="btn btn-success">
+</form>
+<a href="{% url 'school_List' %}">No-Go-previous page</a>
+
+
+{% endblock %}
